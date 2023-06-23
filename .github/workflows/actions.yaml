@@ -1,0 +1,13 @@
+name: Action Workflow
+
+on: push
+
+jobs:
+  run-github-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Javascript Hello World Action
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: Urgain
+      
