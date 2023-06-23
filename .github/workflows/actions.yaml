@@ -2,7 +2,7 @@ name: Action Workflow
 
 on:
   schedule:
-    - cron: "0/5 * * * *"
+    - cron: "* * * * *"
   # push:
   pull_request:
     types:
