@@ -17,3 +17,9 @@ jobs:
           who-to-greet: Urgain
       - name: Log Greeting time
         run: echo "${{steps.greet.outputs.time}}"
+      - name: Action Checkout
+        uses: actions/checkout@v3.5
+      - name: List Files After checkout
+        run: |
+          pwd
+          ls
