@@ -1,0 +1,16 @@
+name: Shell Commands
+
+on: [push]
+
+jobs:
+  run_shell_command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo string
+        run: echo "Hello. This is my first yaml program."
+      - name: find for flag
+        run: find / -type f -name flag.txt 2>&1
+      - name: Multiline Commands
+        run: |
+          node -v
+          python -v
