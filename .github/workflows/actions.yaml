@@ -3,8 +3,8 @@ name: Action Workflow
 on:
   repository_dispatch:
     types: [build]
-  schedule:
-    - cron: "* * * * *"
+  # schedule:
+  #   - cron: "* * * * *"
   # push:
   pull_request:
     types:
