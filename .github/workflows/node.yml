@@ -8,15 +8,16 @@ jobs:
       matrix: 
         os: [macos-latest,ubuntu-latest,windows-latest]
         node-version: [12,14]
-      include:
-        - os: ubuntu-latest
-          node-version: 12
-          is_ubuntu_12: true
-      exclude:
-        - os: ubuntu-latest
-          node-version: 14
-        - os: macos-latest
-          node-version: 12
+      # Include and Exclude was not working. So its commented out.
+      # include:
+      #   - os: ubuntu-latest
+      #     node-version: 12
+      #     is_ubuntu_12: true
+      # exclude:
+      #   - os: ubuntu-latest
+      #     node-version: 14
+      #   - os: macos-latest
+      #     node-version: 12
       # max-parallel: 3
       fail-fast: true
     runs-on: ${{ matrix.os }}
