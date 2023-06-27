@@ -1,0 +1,15 @@
+name: Changing Node version
+
+on: push
+
+jobs:
+  Node-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: node version
+        run: node -v 
+      - uses: actions/setup-node@v3
+        with: 
+          Node-version: 6
+      - name: node version after setup 
+        run: node -v
